@@ -1,0 +1,1 @@
+savedcmd_/home/kronos/kronos/CAENlibs/CAENUSBdrvB-v1.6.1/src/CAENUSBdrvB.mod := printf '%s\n'   src/CAENUSBdrvB.o | awk '!x[$$0]++ { print("/home/kronos/kronos/CAENlibs/CAENUSBdrvB-v1.6.1/"$$0) }' > /home/kronos/kronos/CAENlibs/CAENUSBdrvB-v1.6.1/src/CAENUSBdrvB.mod

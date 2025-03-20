@@ -1,0 +1,1 @@
+savedcmd_/home/kronos/kronos/CAENlibs/CAENUSBdrvB-v1.6.1/src/CAENUSBdrvB.ko := ld -r -m elf_x86_64 -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /home/kronos/kronos/CAENlibs/CAENUSBdrvB-v1.6.1/src/CAENUSBdrvB.ko /home/kronos/kronos/CAENlibs/CAENUSBdrvB-v1.6.1/src/CAENUSBdrvB.o /home/kronos/kronos/CAENlibs/CAENUSBdrvB-v1.6.1/src/CAENUSBdrvB.mod.o

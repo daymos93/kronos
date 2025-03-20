@@ -1,0 +1,1 @@
+savedcmd_/home/kronos/kronos/CAENlibs/CAENUSBdrvB-v1.6.1/modules.order := {   echo /home/kronos/kronos/CAENlibs/CAENUSBdrvB-v1.6.1/src/CAENUSBdrvB.o; :; } > /home/kronos/kronos/CAENlibs/CAENUSBdrvB-v1.6.1/modules.order

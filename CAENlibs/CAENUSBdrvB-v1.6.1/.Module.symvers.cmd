@@ -1,0 +1,1 @@
+savedcmd_/home/kronos/kronos/CAENlibs/CAENUSBdrvB-v1.6.1/Module.symvers :=  scripts/mod/modpost -M -m -a      -o /home/kronos/kronos/CAENlibs/CAENUSBdrvB-v1.6.1/Module.symvers -T /home/kronos/kronos/CAENlibs/CAENUSBdrvB-v1.6.1/modules.order -i Module.symvers -e 
