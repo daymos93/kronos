@@ -103,6 +103,9 @@ def connectCAEN(ip):
     #     deinit_system(handle=handle)
     # print("Bye bye.")
 
+def disconnectCAEN(handle):
+    deinit_system(handle)
+
 def celsius_to_kelvin(celsius):
     return celsius + 273.15
 
@@ -459,12 +462,29 @@ if __name__ == '__main__':
         
         
         # Sleep for waiting time
+        disconnectCAEN(handle)
         # print("Ramping completed, wait for waiting time...")
         log_message(log_file, "Ramping completed, wait for waiting time...")
 
         time.sleep(waiting_time*60)
         # print("Waiting time ended")
         log_message(log_file, "Waiting time ended")
+
+        # Reset CAEN connection
+        log_message(log_file, "Reset CAEN connection")
+        handle = connectCAEN(ip)
+        if handle == 0:
+            # print(f"Got handle: {handle}")
+            # print(f"Comunication CAEN HV mainframe ----- OK")
+            log_message(log_file, "Comunication CAEN HV mainframe: OK")
+            
+        else:
+            # print(f"Comunication CAEN HV mainframe ----- ERROR")
+            log_message(log_file, "Comunication CAEN HV mainframe: ERROR")
+            
+            sys.exit("Stopping the script")  # or use exit()
+
+        
 
         # Launch wavedump   
         if scan_type == 'daq': 

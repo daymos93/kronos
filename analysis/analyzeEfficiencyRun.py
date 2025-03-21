@@ -120,9 +120,14 @@ if __name__ == "__main__":
         analyzer.loadConfig(cfg) # cfg_GIFPP cfg_FEB12
         analyzer.setVerbose(1)
 
-        ### 2 PMT trigger on the chamber   #### comment the on eused for time resolution
-        analyzer.setNoiseTimeWindow(5, 35) # analyzer.setNoiseTimeWindow(10, 60)  #  define start and end time of the noise window
-        analyzer.setMuonTimeWindow(40, 60) # analyzer.setMuonTimeWindow(60, 90) #  define start and end time of the muon window
+        ### 4 PMT TOR trigger on the chamber   #### comment the on eused for time resolution
+        analyzer.setNoiseTimeWindow(100, 200) # analyzer.setNoiseTimeWindow(10, 60)  #  define start and end time of the noise window
+        analyzer.setMuonTimeWindow(30, 70) # analyzer.setMuonTimeWindow(60, 90) #  define start and end time of the muon window
+
+        ### RND TOR trigger on the chamber   #### comment the on eused for time resolution
+        # analyzer.setNoiseTimeWindow(50, 200) # analyzer.setNoiseTimeWindow(10, 60)  #  define start and end time of the noise window
+        # analyzer.setMuonTimeWindow(50, 200) # analyzer.setMuonTimeWindow(60, 90) #  define start and end time of the muon window
+
 
         ##### with aplifificatorre 
         # analyzer.setNoiseTimeWindow(10, 40)  # analyzer.setNoiseTimeWindow(10, 60) # define start and end time of the noise window

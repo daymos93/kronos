@@ -329,7 +329,7 @@ class Analyzer():
                         peak_end_idx = 0  # end signal signal index
 
                   
-                        # finding singal thr indexes
+                        # finding signal thr indexes
                         Didx = 10
 
                         if min(pulse_muon[peak_min_idx-Didx:peak_min_idx], key=lambda x: abs(x - thrs_)):
